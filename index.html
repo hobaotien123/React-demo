@@ -10,14 +10,20 @@
 
 	<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
 	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-	<script type="text/javascript">
-		const Work = React.createElement('li',{className : 'li'}, 'Go to market');
-		const Work1 = React.createElement('li',{className : 'li'}, 'Buy food');
-		const Work2 = React.createElement('li',{className : 'li'}, 'Make dinner');
-		const List = React.createElement('ul',{className : 'list'}, [ Work, Work1, Work2]);
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<script type="text/babel" >
+		// const Work = React.createElement('li',{className : 'li'}, 'Go to market');
+		// const Work1 = React.createElement('li',{className : 'li'}, 'Buy food');
+		// const Work2 = React.createElement('li',{className : 'li'}, 'Make dinner');
+		// const List = React.createElement('ul',{className : 'list'}, [ Work, Work1, Work2]);
+		const List = <ul className='list'>  
+						<li>Go to market</li>
+						<li>Buy foodt</li>
+						<li>Make dinner</li>
+		 	 		</ul>
 
 		const App = React.createElement('div', {className : 'container'}, List);
-		const Hello = React.createElement('div',null,'Hello CodersX ');
+		// const Hello = React.createElement('div',null,'Hello CodersX ');
 		const root = document.getElementById('root');
 		ReactDOM.render(App,root);	
 	</script>
